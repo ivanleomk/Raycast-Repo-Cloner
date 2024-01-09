@@ -12,14 +12,22 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "index",
-      "title": "Submit Form",
+      "name": "configure-settings",
+      "title": "Configure your default settings for Clone Repo extension",
       "description": "Template for submitting a form",
       "mode": "view"
+    },
+    {
+      "name": "download-repo",
+      "title": "Download Repo",
+      "description": "Download a chosen repository to a parent directory of your choice",
+      "mode": "no-view"
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.64.5"
+    "@raycast/api": "^1.64.5",
+    "@raycast/utils": "^1.10.1",
+    "simple-git": "^3.22.0"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.6",
